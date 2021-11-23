@@ -1,0 +1,11 @@
+import { createClient } from "contentful";
+
+
+
+export default function RecipeDetails() {
+  return (
+    <div>
+      Recipe Details
+    </div>
+  )
+}
