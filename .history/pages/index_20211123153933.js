@@ -1,5 +1,5 @@
 import { createClient } from "contentful";
-import QueenCard from "../components/QueenCard";
+import RecipeCard from "../components/RecipeCard";
 
 export async function getStaticProps() {
   const client = createClient({
@@ -9,6 +9,8 @@ export async function getStaticProps() {
 
   const res = await client.getEntries({ content_type: 'dragQueens'})
 
+  console.log(res)
+
   return {
     props: {
       dragQueens: res.items
@@ -17,12 +19,11 @@ export async function getStaticProps() {
   }
 }
 
-export default function Queens( { dragQueens }) {
-  console.log(dragQueens)
+export default function Recipes( { dragQueens }) {
   return (
     <div className="recipe-list">
-      {dragQueens.map(queen => (
-        <QueenCard key={queen.sys.id} queen={queen}/>
+      {dragQueens.map(recipe => (
+        <RecipeCard key={recipe.sys.id} recipe={recipe}/>
       ))}
 
       <style jsx>{`
