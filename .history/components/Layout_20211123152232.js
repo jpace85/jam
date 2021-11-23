@@ -10,7 +10,7 @@ export default function Layout({ children }) {
               <span>My favourite</span>
               <span>Drag Queens</span>
             </h1>
-            <h2>...may the best drag queen win</h2>
+            <h2>...may the best queen win</h2>
           </a>
         </Link>
       </header>
@@ -20,7 +20,7 @@ export default function Layout({ children }) {
       </div>
 
       <footer>
-        <p>Copyright 2021 If you can't love yourself, how the hell you gonna love someone else?!</p>
+        <p>Copyright 2021 Just Add Marmite :)</p>
       </footer>
     </div>
   )

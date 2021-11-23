@@ -17,7 +17,7 @@ export async function getStaticProps() {
   }
 }
 
-export default function Queens( { dragQueens }) {
+export default function Recipes( { dragQueens }) {
   console.log(dragQueens)
   return (
     <div className="recipe-list">

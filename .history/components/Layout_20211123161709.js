@@ -10,7 +10,7 @@ export default function Layout({ children }) {
               <span>My favourite</span>
               <span>Drag Queens</span>
             </h1>
-            <h2>...may the best drag queen win</h2>
+            <h2>...may the best queen win</h2>
           </a>
         </Link>
       </header>
